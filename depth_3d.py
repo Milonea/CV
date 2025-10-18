@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-
 def generate_point_cloud(image):
     if image is None:
         raise ValueError("입력 이미지가 없습니다.")
@@ -12,7 +11,6 @@ def generate_point_cloud(image):
     X, Y = np.meshgrid(np.arange(w), np.arange(h))
     Z = gray.astype(np.float32)
     return depth_map, X, Y, Z
-
 if __name__ == "__main__":
     image = cv2.imread('sample.jpg')
     if image is None:

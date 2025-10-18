@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 import cv2
-from depth_basic import generate_depth_map
+from depth import generate_depth_map
 from depth_3d import generate_point_cloud
 def test_generate_depth_map():
     image = np.zeros((100, 100, 3), dtype=np.uint8)
