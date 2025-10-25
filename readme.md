@@ -71,8 +71,8 @@ project_root/
 `setup/kaggle.json` 파일을 생성하고 Kaggle API Key를 저장합니다.
 
 ```json
-{
 # 파일 예시 
+{
   "username":"YOUR_KAGGLE_USERNAME",
   "key":"YOUR_KAGGLE_KEY"
 }
