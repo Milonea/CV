@@ -88,10 +88,10 @@ kaggle:
 
 ### 3\. 학습 실행
 
-`main.py` 스크립트를 실행하여 파이프라인을 시작합니다.
+`train.py` 스크립트를 실행하여 파이프라인을 시작합니다.
 
 ```bash
-python main.py
+python train.py
 ```
 
   * **GPU 사용 시 자동 감지 및 사용**됩니다.
