@@ -100,8 +100,11 @@ kaggle:
 ```python
 ['Person','vehicle']
 ```
+-----
 
-Tuning.py
+# Tuning.py
+
+-----
 
 ## 📝 `setup/config.ini` 설정 가이드
 
@@ -155,8 +158,11 @@ python tuning.py
 
 > **결과:** 개선 모델이 생성되며, 개선된 성능 지표가 최종 출력됩니다.
 
+-----
 
-Test.py
+# Test.py
+
+-----
 
 ## 📦 실행 준비
 
