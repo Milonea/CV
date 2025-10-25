@@ -110,7 +110,7 @@ kaggle:
 
 ```ini
 [PATHS]
-; train.py에서 설정한 학습 폴더 이름 (runs/train/아래 폴더 이름)
+; train.py에서 설정한 학습 폴더 이름
 TRAIN_RUN_NAME = construction_yolov8_cuda
 ; 데이터 설정 파일 경로
 VAL_DATA_PATH = setup/data.yaml
