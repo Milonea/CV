@@ -123,7 +123,7 @@ def main():
     if not original_data_yaml_path:
         # data.yaml 파일이 없으면 하드코딩된 정보를 사용하거나 오류 발생
         print("[WARN] 데이터셋 루트에서 data.yaml 파일을 찾을 수 없습니다. 하드코딩된 클래스 정보를 사용합니다.")
-        class_names = ['Hardhat','Mask','NO-Hardhat','NO-Mask','NO-Safety Vest','Person','Safety Cone','Safety Vest','machinery','vehicle']
+        class_names = ['Person','vehicle']
         num_classes = 10
     else:
         original_data_yaml_path = original_data_yaml_path[0]

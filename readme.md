@@ -52,14 +52,14 @@ project_root/
 │
 ├─ setup/
 │   ├─ config.yaml         # Kaggle 데이터셋 URL 정의
-│   └─ kaggle.json         # Kaggle API 인증 파일
+│   └─ kaggle.json         # Kaggle API 인증 파일 (개인별 API Key 활용)
 │
 ├─ datasets/
-│   └─ css-data/           # Kaggle 데이터셋 다운로드 및 압축 해제 폴더
+│   └─ css-data/           # Kaggle 데이터셋 다운로드 및 압축 해제 폴더 (실행 시 생성)
 │
-├─ main.py                 # 학습 실행 스크립트
+├─ train.py                 # 학습 실행 스크립트
 └─ runs/
-    └─ train/              # 학습 결과 저장 폴더
+    └─ train/              # 학습 결과 저장 폴더 (실행 시 생성)
 ```
 
 -----
