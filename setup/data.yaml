@@ -1,6 +1,0 @@
-
-train: d:/CV/datasets/css-data/bone fracture detection.v4-v4.yolov8/train/images
-val:   d:/CV/datasets/css-data/bone fracture detection.v4-v4.yolov8/valid/images
-test:  d:/CV/datasets/css-data/bone fracture detection.v4-v4.yolov8/test/images
-nc: 7
-names: [elbow positive, fingers positive, forearm fracture, humerus fracture, humerus, shoulder fracture, wrist positive]
