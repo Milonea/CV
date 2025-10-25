@@ -19,8 +19,9 @@ Thumbs.db
 datasets/
 *.zip
 *.tar.gz
-# Kaggle 인증 파일
+# Setup 폴더 설정파일
 setup/kaggle.json
+setup/data.yaml
 # YOLO
 *.pt
 runs/
