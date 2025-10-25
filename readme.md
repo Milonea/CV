@@ -68,15 +68,7 @@ project_root/
 
 ### 1\. Kaggle 인증 파일 준비
 
-`setup/kaggle.json` 파일을 생성하고 Kaggle API Key를 저장합니다.
-
-```json
-# 파일 예시 
-{
-  "username":"YOUR_KAGGLE_USERNAME",
-  "key":"YOUR_KAGGLE_KEY"
-}
-```
+`setup/` 폴더에 Kaggle API Key 파일을 저장합니다.
 
 ### 2\. Kaggle 데이터셋 URL 설정
 
