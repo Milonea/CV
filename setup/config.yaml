@@ -1,2 +1,2 @@
 kaggle:
-  dataset_url: username/dataset-name
+  dataset_url: "username/dataset-name"

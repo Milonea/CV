@@ -26,3 +26,5 @@ data.yaml
 *.pt
 runs/
 weights/
+# 샘플 데이터
+sample
