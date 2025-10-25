@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.venv/
+.env
+.venv/
+*.log
+# OS / IDE 관련
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# 데이터셋 관련
+datasets/
+*.zip
+*.tar.gz
+# Kaggle 인증 파일
+setup/kaggle.json
+# YOLO
+*.pt
+runs/
+weights/
