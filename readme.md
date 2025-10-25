@@ -72,6 +72,7 @@ project_root/
 
 ```json
 {
+# 파일 예시 
   "username":"YOUR_KAGGLE_USERNAME",
   "key":"YOUR_KAGGLE_KEY"
 }
@@ -79,9 +80,10 @@ project_root/
 
 ### 2\. Kaggle 데이터셋 URL 설정
 
-`setup/config.yaml` 파일을 생성하고 다운로드할 데이터셋 URL을 설정합니다.
+`setup/config.yaml` 파일에서 다운로드할 데이터셋 URL을 설정합니다.
 
 ```yaml
+# 기본 파일 구조
 kaggle:
   dataset_url: "username/dataset-name"
 ```
