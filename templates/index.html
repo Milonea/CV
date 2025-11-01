@@ -1,0 +1,35 @@
+<!doctype html>
+<title>AI 식재료 레시피 검색</title>
+<h1>📷 식재료 사진 업로드</h1>
+
+<form method=post enctype=multipart/form-data>
+  <input type=file name=file accept="image/*" required>
+  <input type=submit value=인식 시작>
+</form>
+
+{% if ingredients %}
+    <hr>
+    <h2>✅ 인식된 식재료 ({{ ingredients | length }}개)</h2>
+    
+    <form method="POST" action="{{ url_for('search_ingredients') }}">
+        <p><strong>검색할 식재료를 선택하세요:</strong></p>
+        
+        <div style="margin-bottom: 15px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
+        {% for ing in ingredients %}
+            <label style="display: inline-block; margin-right: 20px; margin-bottom: 5px;">
+                <input type="checkbox" name="ingredients" value="{{ ing }}" checked> 
+                {{ ing }}
+            </label>
+        {% endfor %}
+        </div>
+        
+        <input type="submit" value="선택 재료로 레시피 검색" style="padding: 10px 20px;">
+    </form>
+    
+    {% if uploaded_file %}
+        <hr>
+        <h3>업로드된 이미지</h3>
+        <img src="{{ url_for('static', filename='uploads/' + uploaded_file) }}" style="max-width: 300px; height: auto;">
+    {% endif %}
+
+{% endif %}
