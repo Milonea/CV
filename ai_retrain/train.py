@@ -10,7 +10,7 @@ config = configparser.ConfigParser()
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH_ABS = os.path.normpath(os.path.join(CURRENT_DIR, CONFIG_FILE))
-BACKUP_FILE = CONFIG_PATH_ABS + ".bak" # 백업 파일 경로 추가
+BACKUP_FILE = CONFIG_PATH_ABS + ".bak"
 
 try:
     with open(CONFIG_PATH_ABS, 'r', encoding='utf-8') as f:
