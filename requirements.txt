@@ -1,0 +1,7 @@
+# requirements. 파일 내용
+ultralytics
+Flask
+python-dotenv
+pyyaml
+requests
+Pillow

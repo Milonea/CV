@@ -1,0 +1,26 @@
+<!doctype html>
+<title>레시피 검색 결과</title>
+
+<a href="{{ url_for('index') }}">⬅️ 다시 사진 업로드</a>
+<h1>🍲 레시피 검색 결과</h1>
+<hr>
+
+<h2>선택된 재료</h2>
+<p>
+    <strong>{% for ing in selected_ingredients %}{{ ing }}{% if not loop.last %}, {% endif %}{% endfor %}</strong>
+</p>
+
+{% if recipes %}
+    <h2>검색 결과</h2>
+    {% set query_ingredients = selected_ingredients[:max_ingredients] %}
+    <ul style="list-style-type: none; padding: 0;">
+        {% for recipe in recipes %}
+            <li style="margin-bottom: 10px; border-bottom: 1px dashed #eee; padding-bottom: 5px;">
+                <a href="{{ recipe.link }}" target="_blank" style="font-size: 1.1em; color: #007bff; text-decoration: none;">{{ recipe.title }}</a>
+                <br><span style="color: #6c757d; font-size: 0.8em;">{{ recipe.link }}</span>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>선택하신 재료로는 검색된 레시피가 없습니다. (API 설정 또는 검색 결과 없음)</p>
+{% endif %}
